@@ -30,7 +30,12 @@ const Banner = () => {
                 <img src={Model3} alt="" />
             </SwiperSlide>
         </Swiper>
-        <div className="absolute bottom-20 z-10">
+        <div className="absolute bottom-36 z-10 font-bold italic text-4xl w-full text-center px-2">
+            <h1 className='text-[#6A6A6A] ml-[40%]'>LUXURY</h1>
+            <h1 className='text-[#6A6A6A]'>FASHION</h1>
+            <h1 className='text-[#6A6A6A] mr-[40%]'>ACCESSORIES</h1>
+        </div>
+        <div className="absolute bottom-14 z-10">
             <Button
                 text='Explore Collection'
                 className='btn-primary'
