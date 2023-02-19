@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/frost-e-commerce/static/css/main.bcdf55fc.css",
-    "main.js": "/frost-e-commerce/static/js/main.b90196ec.js",
+    "main.css": "/frost-e-commerce/static/css/main.2198594f.css",
+    "main.js": "/frost-e-commerce/static/js/main.00666b0c.js",
     "static/media/image-video.png": "/frost-e-commerce/static/media/image-video.edb8cb8711bfaf94a2b4.png",
-    "static/media/model-2.png": "/frost-e-commerce/static/media/model-2.ca33a947e5227c9794e5.png",
-    "static/media/model-3.png": "/frost-e-commerce/static/media/model-3.60235be97e32ca640c59.png",
+    "static/media/model-2.png": "/frost-e-commerce/static/media/model-2.531299398b35b9e9ae28.png",
+    "static/media/model-3.png": "/frost-e-commerce/static/media/model-3.caec3f279a0db7323976.png",
     "static/media/promo-1.png": "/frost-e-commerce/static/media/promo-1.96c70a319a92894c3b77.png",
     "static/media/arrival-4.png": "/frost-e-commerce/static/media/arrival-4.374ecc34d2b3a18f96c7.png",
     "static/media/sosmed-4.png": "/frost-e-commerce/static/media/sosmed-4.4c6f627e9af956c94546.png",
@@ -35,11 +35,11 @@
     "static/media/Search.svg": "/frost-e-commerce/static/media/Search.4c2e62da658194dcd16178b9525ce297.svg",
     "static/media/Humberger.svg": "/frost-e-commerce/static/media/Humberger.5562d307f2243521c061ae347cfbeccd.svg",
     "static/media/Arrow.svg": "/frost-e-commerce/static/media/Arrow.0f191d8dc72ced08bdf09796e6aa50a6.svg",
-    "main.bcdf55fc.css.map": "/frost-e-commerce/static/css/main.bcdf55fc.css.map",
-    "main.b90196ec.js.map": "/frost-e-commerce/static/js/main.b90196ec.js.map"
+    "main.2198594f.css.map": "/frost-e-commerce/static/css/main.2198594f.css.map",
+    "main.00666b0c.js.map": "/frost-e-commerce/static/js/main.00666b0c.js.map"
   },
   "entrypoints": [
-    "static/css/main.bcdf55fc.css",
-    "static/js/main.b90196ec.js"
+    "static/css/main.2198594f.css",
+    "static/js/main.00666b0c.js"
   ]
 }
