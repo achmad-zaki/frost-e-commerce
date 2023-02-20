@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/frost-e-commerce/static/css/main.2198594f.css",
-    "main.js": "/frost-e-commerce/static/js/main.00666b0c.js",
+    "main.css": "/frost-e-commerce/static/css/main.4e81a678.css",
+    "main.js": "/frost-e-commerce/static/js/main.406de372.js",
     "static/media/image-video.png": "/frost-e-commerce/static/media/image-video.edb8cb8711bfaf94a2b4.png",
     "static/media/model-2.png": "/frost-e-commerce/static/media/model-2.531299398b35b9e9ae28.png",
     "static/media/model-3.png": "/frost-e-commerce/static/media/model-3.caec3f279a0db7323976.png",
@@ -31,15 +31,18 @@
     "static/media/instagram.svg": "/frost-e-commerce/static/media/instagram.d8949cd7695bea4d173c8e92b0c029bd.svg",
     "static/media/line.svg": "/frost-e-commerce/static/media/line.c69e20f6e78c421ce0eeeedddb21a842.svg",
     "index.html": "/frost-e-commerce/index.html",
+    "static/media/Gridview.svg": "/frost-e-commerce/static/media/Gridview.3bbd6e1dc5a3b7479092203319680432.svg",
     "static/media/Shopping-bag.svg": "/frost-e-commerce/static/media/Shopping-bag.c2fe88ee904a8a36a801abc642dced61.svg",
+    "static/media/Listview.svg": "/frost-e-commerce/static/media/Listview.703d419e3fa9045d9d6b0a0ba6c96c14.svg",
     "static/media/Search.svg": "/frost-e-commerce/static/media/Search.4c2e62da658194dcd16178b9525ce297.svg",
+    "static/media/Filter.svg": "/frost-e-commerce/static/media/Filter.b8f3a0692d77db2f805e33335f4ade29.svg",
     "static/media/Humberger.svg": "/frost-e-commerce/static/media/Humberger.5562d307f2243521c061ae347cfbeccd.svg",
     "static/media/Arrow.svg": "/frost-e-commerce/static/media/Arrow.0f191d8dc72ced08bdf09796e6aa50a6.svg",
-    "main.2198594f.css.map": "/frost-e-commerce/static/css/main.2198594f.css.map",
-    "main.00666b0c.js.map": "/frost-e-commerce/static/js/main.00666b0c.js.map"
+    "main.4e81a678.css.map": "/frost-e-commerce/static/css/main.4e81a678.css.map",
+    "main.406de372.js.map": "/frost-e-commerce/static/js/main.406de372.js.map"
   },
   "entrypoints": [
-    "static/css/main.2198594f.css",
-    "static/js/main.00666b0c.js"
+    "static/css/main.4e81a678.css",
+    "static/js/main.406de372.js"
   ]
 }
