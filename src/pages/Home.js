@@ -15,7 +15,7 @@ import Footer from '../components/Footer'
 const Home = () => {
     const [navbar, setNavbar] = useState(false)
   return (
-    <div className="relative">
+    <div className="relative bg-white">
       <Navbar setNavbar={setNavbar}/>
       <div className={`fixed transition-all ease-out duration-500 ${navbar ? 'left-0 top-0 w-full h-full z-30': '-left-full'}`}>
         <SideNavbar setNavbar={setNavbar}/>

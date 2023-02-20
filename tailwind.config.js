@@ -12,7 +12,11 @@ module.exports = {
       'secondary': '#CD3750',
       'white': '#FFFFFF'  
     },
-    extend: {},
+    extend: {
+      dropShadow: {
+        'thin': '0 4px 5px rgba(221, 221, 221, 0.25)',
+      },
+    },
   },
   plugins: [],
 }

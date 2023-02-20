@@ -5,7 +5,7 @@ import Bag from '../assets/icons/Shopping-bag.svg'
 
 const Navbar = ({setNavbar}) => {
   return (
-    <header className="py-4 fixed w-full top-0 z-20 bg-white md:w-1/2 md:inset-x-[25%]">
+    <header className="py-4 fixed w-full top-0 z-20 bg-white md:w-1/2 md:inset-x-[25%] drop-shadow-thin">
       <div className="px-5 flex items-center justify-between">
         <button onClick={() => setNavbar(true)}>
           <img src={Humberger} alt="" />

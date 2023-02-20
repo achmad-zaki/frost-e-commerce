@@ -1,20 +1,21 @@
 import React from 'react'
 import { Pagination } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import Line from '../assets/icons/line.svg'
 import ImgPromo1 from '../assets/images/promo-1.png'
 import ImgPromo2 from '../assets/images/promo-2.png'
 
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
+import Title from './Title';
 
 const Promo = () => {
   return (
     <div className="md:w-1/2 md:mx-auto">
-      <div className="text-center flex flex-col gap-2 items-center justify-center pt-20 pb-5">
-        <h1 className='text-[18px] tracking-[4px] font-normal'>JUST FOR YOU</h1>
-        <img src={Line} alt="" />
+      <div className="pt-20 pb-5">
+        <Title
+          title='just for you'
+        />
       </div>
       <Swiper
         modules={[ Pagination ]}
