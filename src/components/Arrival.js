@@ -79,7 +79,8 @@ const Arrival = () => {
         ))}
       </div>
       <div className='flex items-center gap-2'>
-        <Link to="category" className='font-normal'>Explore More</Link>
+        {/* <Link to="/category" className='font-normal'>Explore More</Link> */}
+        <a href="/category" className='font-normal'>Explore More</a>
         <img src={Arrow} alt="" />
       </div>
     </div>

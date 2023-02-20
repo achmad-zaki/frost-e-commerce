@@ -37,12 +37,12 @@ const Banner = () => {
             <h1 className='text-[#6A6A6A] mr-[40%]'>ACCESSORIES</h1>
         </div>
         <div className="absolute bottom-14 z-10">
-            <Link to="category">   
+            {/* <Link to="category">    */}
                 <Button
                     text='Explore Collection'
                     className='btn-primary'
                 />
-            </Link>
+            {/* </Link> */}
         </div>
     </div>
   )
