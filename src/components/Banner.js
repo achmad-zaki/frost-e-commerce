@@ -39,7 +39,7 @@ const Banner = () => {
             <Button
                 text='Explore Collection'
                 className='btn-primary'
-                navigation='/category'
+                navigation='/frost-e-commerce/category'
             />
         </div>
     </div>
