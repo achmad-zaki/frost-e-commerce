@@ -4,12 +4,16 @@ import Category from "./pages/Category";
 
 function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={ <Home/> } />
-        <Route path="/category" element={ <Category/> } />
-      </Routes>
-    </Router>
+    <>
+    <Home/>
+    <Category/>
+    </>
+    // <Router>
+    //   <Routes>
+    //     <Route path="/" element={ <Home/> } />
+    //     <Route path="/category" element={ <Category/> } />
+    //   </Routes>
+    // </Router>
   );
 }
 
