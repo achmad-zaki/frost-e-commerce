@@ -4,11 +4,12 @@ import Arrival2 from '../assets/images/arrival-2.png'
 import Arrival3 from '../assets/images/arrival-3.png'
 import Arrival4 from '../assets/images/arrival-4.png'
 import Arrow from '../assets/icons/Arrow.svg'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import GridView from './GridView'
 import Title from './Title'
 
 const Arrival = () => {
+  const router = useNavigate()
   const tab = [
     {
       link: 'All',
@@ -53,7 +54,17 @@ const Arrival = () => {
       img: Arrival4,
       title: 'JK45 Jackets & Gilets',
       price: '$79.99'
-    }
+    },
+    {
+      img: Arrival4,
+      title: 'JK45 Jackets & Gilets',
+      price: '$79.99'
+    },
+    {
+      img: Arrival4,
+      title: 'JK45 Jackets & Gilets',
+      price: '$79.99'
+    },
   ]
   return (
     <div className="flex flex-col gap-5 items-center justify-center pt-10 xl:pt-20 md:w-1/2 md:mx-auto">
@@ -70,8 +81,8 @@ const Arrival = () => {
       <div className="container mx-auto px-3 grid grid-cols-2 gap-3">
         {arrival.map((item, index) => (
           <GridView
-            view={false}
             key={index}
+            view={false}
             images={item.img}
             title={item.title}
             price={item.price}
@@ -80,7 +91,8 @@ const Arrival = () => {
       </div>
       <div className='flex items-center gap-2'>
         {/* <Link to="/category" className='font-normal'>Explore More</Link> */}
-        <a href="/category" className='font-normal'>Explore More</a>
+        {/* <a href="/category" className='font-normal'>Explore More</a> */}
+        <button className='font-normal' onClick={() => router('/category')}>Explore More</button>
         <img src={Arrow} alt="" />
       </div>
     </div>

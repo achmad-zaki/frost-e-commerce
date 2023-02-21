@@ -9,7 +9,6 @@ import Button from '../components/Button'
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { Link } from 'react-router-dom';
 
 const Banner = () => {
   return (
@@ -36,13 +35,12 @@ const Banner = () => {
             <h1 className='text-[#6A6A6A]'>FASHION</h1>
             <h1 className='text-[#6A6A6A] mr-[40%]'>ACCESSORIES</h1>
         </div>
-        <div className="absolute bottom-14 z-10">
-            {/* <Link to="category">    */}
-                <Button
-                    text='Explore Collection'
-                    className='btn-primary'
-                />
-            {/* </Link> */}
+        <div className="absolute bottom-14 z-10"> 
+            <Button
+                text='Explore Collection'
+                className='btn-primary'
+                navigation='/category'
+            />
         </div>
     </div>
   )
