@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/frost-e-commerce/static/css/main.4e81a678.css",
-    "main.js": "/frost-e-commerce/static/js/main.66459076.js",
+    "main.js": "/frost-e-commerce/static/js/main.7d065dbc.js",
     "static/media/image-video.png": "/frost-e-commerce/static/media/image-video.edb8cb8711bfaf94a2b4.png",
     "static/media/model-2.png": "/frost-e-commerce/static/media/model-2.531299398b35b9e9ae28.png",
     "static/media/model-3.png": "/frost-e-commerce/static/media/model-3.caec3f279a0db7323976.png",
@@ -39,10 +39,10 @@
     "static/media/Humberger.svg": "/frost-e-commerce/static/media/Humberger.5562d307f2243521c061ae347cfbeccd.svg",
     "static/media/Arrow.svg": "/frost-e-commerce/static/media/Arrow.0f191d8dc72ced08bdf09796e6aa50a6.svg",
     "main.4e81a678.css.map": "/frost-e-commerce/static/css/main.4e81a678.css.map",
-    "main.66459076.js.map": "/frost-e-commerce/static/js/main.66459076.js.map"
+    "main.7d065dbc.js.map": "/frost-e-commerce/static/js/main.7d065dbc.js.map"
   },
   "entrypoints": [
     "static/css/main.4e81a678.css",
-    "static/js/main.66459076.js"
+    "static/js/main.7d065dbc.js"
   ]
 }
