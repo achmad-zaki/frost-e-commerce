@@ -5,7 +5,6 @@ import Arrival3 from '../assets/images/arrival-3.png'
 import Arrival4 from '../assets/images/arrival-4.png'
 import Arrow from '../assets/icons/Arrow.svg'
 import { useNavigate } from 'react-router-dom'
-import GridView from './GridView'
 import Title from './Title'
 
 const Arrival = () => {
@@ -55,16 +54,6 @@ const Arrival = () => {
       title: 'JK45 Jackets & Gilets',
       price: '$79.99'
     },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      price: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      price: '$79.99'
-    },
   ]
   return (
     <div className="flex flex-col gap-5 items-center justify-center pt-10 xl:pt-20 md:w-1/2 md:mx-auto">
@@ -79,15 +68,15 @@ const Arrival = () => {
         ))}
       </ul>
       <div className="container mx-auto px-3 grid grid-cols-2 gap-3">
-        {arrival.map((item, index) => (
-          <GridView
-            key={index}
-            view={false}
-            images={item.img}
-            title={item.title}
-            price={item.price}
-          />
-        ))}
+      {arrival.map((item, index) => (
+        <div className='text-center cursor-pointer hover:scale-95 transition-all duration-300' key={index}>
+          <img src={item.img} alt="" />
+          <div className="pt-5">
+            <h3 className='text-xs text-[#555555]'>{item.title}</h3>
+            <p className="text-primary text-[15px]">{item.price}</p>
+          </div>
+        </div>
+      ))}
       </div>
       <div className='flex items-center gap-2'>
         <button className='font-normal' onClick={() => router('/category')}>Explore More</button>
