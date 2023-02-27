@@ -1,6 +1,3 @@
-import React, { useState } from 'react'
-import Navbar from '../components/Navbar'
-import SideNavbar from '../components/SideNavbar'
 import Arrival from '../components/Arrival'
 import Sponsor from '../components/Sponsor'
 import Collection from '../components/Collection'
@@ -13,9 +10,8 @@ import Sosmed from '../components/Sosmed'
 import Footer from '../components/Footer'
 
 const Home = () => {
-    const [navbar, setNavbar] = useState(false)
   return (
-    <div className="relative bg-white">
+    <div className="relative">
       <Banner/>
       <Arrival/>
       <Sponsor/>

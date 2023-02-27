@@ -5,65 +5,10 @@ import Listview from '../assets/icons/Listview.svg'
 import Gridview from '../assets/icons/Gridview.svg'
 import Filter from '../assets/icons/Filter.svg'
 import GridView from './GridView'
-import Arrival1 from '../assets/images/arrival-1.png'
-import Arrival2 from '../assets/images/arrival-2.png'
-import Arrival3 from '../assets/images/arrival-3.png'
-import Arrival4 from '../assets/images/arrival-4.png'
 
-const CategoryDetail = () => {
-  const arrival = [
-    {
-      img: Arrival1,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival2,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival3,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-    {
-      img: Arrival4,
-      title: 'JK45 Jackets & Gilets',
-      desc: '$79.99'
-    },
-  ]
+const CategoryDetail = ({shirt}) => {
   const [view, setView] = useState(false)
+  console.log({shirt})
   return (
     <div className='pt-24 flex flex-col gap-3 md:w-1/2 md:mx-auto'>
       <div className="flex items-center justify-between">
@@ -95,15 +40,16 @@ const CategoryDetail = () => {
           <button><FiX className='text-sm'/></button>
         </div>
       </div>
-      <div className={`container mx-auto grid ${view ? 'grid-cols-1' : 'grid-cols-2'} gap-3`}>       
-        {arrival.map((item, index) => (
+      <div className={`container mx-auto grid ${view ? 'grid-cols-1' :  'grid-cols-2'} gap-3`}>       
+        {shirt.map((item) => (
           <GridView
+            key={item.id}
+            id={item.id}
             view={view}
-            key={index}
             images={item.img}
             brand='Unisex'
-            title='JK45 Jackets & Gilets'
-            price='$99.99'
+            title={item.title}
+            price={item.price}
           />
         ))}
       </div>
