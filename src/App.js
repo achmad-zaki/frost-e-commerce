@@ -16,7 +16,7 @@ function App() {
         <SideNavbar setNavbar={setNavbar}/>
       </div>
       <Routes>
-        <Route path="/frost-e-commerce" element={ <Home/> } />
+        <Route path="/" element={ <Home/> } />
         <Route path="/frost-e-commerce/category" element={ <Category/> } />
         <Route path="/frost-e-commerce/category/:id" element={ <ProductDetail/> } />
         <Route path="*" element={ <NotFound/> } />
