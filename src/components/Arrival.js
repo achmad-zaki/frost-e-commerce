@@ -90,7 +90,7 @@ const Arrival = () => {
         ))}
       </div>
       <div className='flex items-center gap-2'>
-        <button className='font-normal' onClick={() => router('/frost-e-commerce/category')}>Explore More</button>
+        <button className='font-normal' onClick={() => router('/category')}>Explore More</button>
         <img src={Arrow} alt="" />
       </div>
     </div>

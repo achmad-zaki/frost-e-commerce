@@ -5,7 +5,7 @@ const GridView = ({images, brand, title, price, view, id}) => {
   return (
     <>
       {view === false ?
-      <Link to={`/frost-e-commerce/category/${id}`}>
+      <Link to={`/category/${id}`}>
         <div className='text-center cursor-pointer hover:scale-95 transition-all duration-300'>
           <img src={images} alt="" />
           <div className="pt-5">
@@ -18,7 +18,7 @@ const GridView = ({images, brand, title, price, view, id}) => {
         </div>
       </Link>
         :
-      <Link to={`/frost-e-commerce/category/${id}`}>
+      <Link to={`/category/${id}`}>
         <div className='flex items-center gap-5 hover:scale-95 transition-all duration-300 cursor-pointer'>
           <img src={images} width={150} alt="" />
           <div className="pt-5 flex flex-col gap-2">
