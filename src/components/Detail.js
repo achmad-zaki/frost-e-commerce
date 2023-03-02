@@ -17,7 +17,7 @@ const Detail = ({title, price, img}) => {
   const [codPolicy, setCodPolicy] = useState(false)
   const [returnCod, setReturnCod] = useState(false)
   return (
-    <div className='h-[250vh] pt-20 md:w-1/2 md:mx-auto'>
+    <div className='pt-20 md:w-1/2 md:mx-auto'>
       <div className="p-5 relative">
         <img src={img} alt="" />
         <button className="absolute bg-[#9E9E9E] hover:bg-[#727272] transition duration-300 right-4 bottom-40 rounded-full p-2">
