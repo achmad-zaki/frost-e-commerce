@@ -30,9 +30,9 @@ const GridView = ({images, brand, title, price, view, id}) => {
             <p className="text-primary text-[15px]">{price}</p>
             <div className="flex items-center gap-3 text-[#555555]">
               <span className='text-xs'>Size</span>
-              <button className='border-2 border-[#DEDEDE] hover:border hover:bg-[#f7f7f7] transition duration-300 text-[10px] rounded-full w-8 h-8'>S</button>
-              <button className='border-2 border-[#DEDEDE] hover:border hover:bg-[#f7f7f7] transition duration-300 text-[10px] rounded-full w-8 h-8'>M</button>
-              <button className='border-2 border-[#DEDEDE] hover:border hover:bg-[#f7f7f7] transition duration-300 text-[10px] rounded-full w-8 h-8'>L</button>
+              <button className='type-size'>S</button>
+              <button className='type-size'>M</button>
+              <button className='type-size'>L</button>
             </div>
           </div>
         </div>

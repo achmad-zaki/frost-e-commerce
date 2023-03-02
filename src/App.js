@@ -10,7 +10,7 @@ import ProductDetail from "./pages/ProductDetail";
 function App() {
   const [navbar, setNavbar] = useState(false)
   return (
-    <div className="bg-white">
+    <>
       <Navbar setNavbar={setNavbar}/>
       <div className={`fixed transition-all ease-out duration-500 ${navbar ? 'left-0 top-0 w-full h-full z-30': '-left-full'}`}>
         <SideNavbar setNavbar={setNavbar}/>
@@ -21,7 +21,7 @@ function App() {
         <Route path="/category/:id" element={ <ProductDetail/> } />
         <Route path="*" element={ <NotFound/> } />
       </Routes>
-    </div>
+    </>
   );
 }
 

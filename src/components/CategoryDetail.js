@@ -8,7 +8,6 @@ import GridView from './GridView'
 
 const CategoryDetail = ({shirt}) => {
   const [view, setView] = useState(false)
-  console.log({shirt})
   return (
     <div className='pt-24 flex flex-col gap-3 md:w-1/2 md:mx-auto'>
       <div className="flex items-center justify-between">

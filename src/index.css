@@ -10,7 +10,7 @@
     }
 
     body {
-        @apply bg-[#FCFCFC] font-sofia
+        @apply bg-[#FFFFFF] font-sofia
     }
 
     h1, h2, h3, h4, h5 {
@@ -31,6 +31,10 @@
 
     .active {
         @apply before:absolute before:content-[''] before:-bottom-2 before:left-[10%] before:bg-primary before:h-1 before:w-3/4 before:rounded-lg
+    }
+
+    .type-size {
+        @apply border-2 border-[#DEDEDE] hover:border-none hover:bg-[#333333] hover:text-white focus:bg-[#333333] focus:text-white transition duration-300 text-[10px] rounded-full w-8 h-8
     }
 }
 
