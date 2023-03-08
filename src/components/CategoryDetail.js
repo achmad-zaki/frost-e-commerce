@@ -7,6 +7,22 @@ import Filter from '../assets/icons/Filter.svg'
 import GridView from './GridView'
 
 const CategoryDetail = ({shirt}) => {
+  const [data, setData] = useState(shirt)
+  const [sortAsc, setSortAsc] = useState(true)
+  const sortData = (arr, asc) => {
+    return arr.sort((a, b) => {
+      if(asc) {
+        return a.price - b.price
+      } else {
+        return b.price - a.price
+      }
+    })
+  }
+  const handlerSort = () => {
+    setData(sortData(data, sortAsc))
+    setSortAsc(!sortAsc)
+    console.log(data)
+  }
   const [view, setView] = useState(false)
   return (
     <div className='pt-24 flex flex-col gap-3 md:w-1/2 md:mx-auto'>
@@ -24,7 +40,7 @@ const CategoryDetail = ({shirt}) => {
             <img src={Gridview} clasname='' alt="" />
           }
           </button>
-          <button className="bg-[#F9F9F9] hover:bg-[#eeeded] p-3 rounded-full flex items-center justify-center">
+          <button className="bg-[#F9F9F9] hover:bg-[#eeeded] p-3 rounded-full flex items-center justify-center" onClick={handlerSort}>
               <img src={Filter} alt="" />
           </button>
         </div>
@@ -40,7 +56,7 @@ const CategoryDetail = ({shirt}) => {
         </div>
       </div>
       <div className={`container mx-auto grid ${view ? 'grid-cols-1' :  'grid-cols-2'} gap-3`}>       
-        {shirt.map((item) => (
+        {data.map((item) => (
           <GridView
             key={item.id}
             id={item.id}
@@ -48,7 +64,7 @@ const CategoryDetail = ({shirt}) => {
             images={item.img}
             brand='Unisex'
             title={item.title}
-            price={item.price}
+            price={`$${item.price}`}
           />
         ))}
       </div>
