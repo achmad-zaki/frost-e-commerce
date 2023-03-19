@@ -6,6 +6,8 @@ import Navbar from "./components/Navbar";
 import Category from "./pages/Category";
 import NotFound from "./components/NotFound";
 import ProductDetail from "./pages/ProductDetail";
+import Contact from "./pages/Contact";
+import Blog from "./pages/Blog";
 
 function App() {
   const [navbar, setNavbar] = useState(false)
@@ -19,6 +21,8 @@ function App() {
         <Route path="/" element={ <Home/> } />
         <Route path="/category" element={ <Category/> } />
         <Route path="/category/:id" element={ <ProductDetail/> } />
+        <Route path="/blog" element={ <Blog/> } />
+        <Route path="/contact" element={ <Contact/> } />
         <Route path="*" element={ <NotFound/> } />
       </Routes>
     </>

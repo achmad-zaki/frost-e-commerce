@@ -6,10 +6,10 @@ import { shirt } from '../Data'
 const Category = () => {
   return (
     <>
-        <div className="container mx-auto px-4">
-            <CategoryDetail shirt={shirt}/>
-        </div>
-        <Footer/>
+      <div className="container mx-auto px-4">
+          <CategoryDetail shirt={shirt}/>
+      </div>
+      <Footer/>
     </>
   )
 }

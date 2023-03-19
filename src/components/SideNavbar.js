@@ -1,30 +1,35 @@
 import React from 'react'
 import { FiX } from 'react-icons/fi'
+import { Link } from 'react-router-dom'
 
 const SideNavbar = ({setNavbar}) => {
   const nav = [
     {
+      link: 'Home',
+      path: '/'
+    },
+    {
       link: 'About',
-      path: '#about'
+      path: '/about'
     },
     {
       link: 'Contact',
-      path: '#contact'
+      path: '/contact'
     },
     {
       link: 'Blog',
-      path: '#blog'
+      path: '/blog'
     }
   ]
   return (
-    <nav className='w-full h-full backdrop-blur-md flex items-center justify-center md:w-1/2 md:mx-auto'>
-      <button className='absolute top-5 right-5' onClick={() => setNavbar(false)}>
-        <FiX className='text-3xl'/>
+    <nav className='relative w-3/4 h-full bg-primary flex items-center justify-center md:w-1/2 md:mx-auto'>
+      <button className='absolute top-3 right-3' onClick={() => setNavbar(false)}>
+        <FiX className='text-3xl text-white'/>
       </button>
-      <ul className='flex flex-col items-center gap-10'>
+      <ul className='flex flex-col items-center gap-10 text-white'>
         {nav.map((item, index) => (
         <li key={index}>
-          <a className='text-xl' href={item.path}>{item.link}</a>
+          <Link className='text-xl' to={item.path}>{item.link}</Link>
         </li>
         ))}
       </ul>

@@ -3,6 +3,7 @@ import { IoLogoTwitter } from 'react-icons/io'
 import { IoLogoYoutube } from 'react-icons/io'
 import { AiFillInstagram } from 'react-icons/ai'
 import Line from '../assets/icons/line.svg'
+import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -27,9 +28,9 @@ const Footer = () => {
         <img src={Line} alt="" />
         <ul>
             <li className='flex gap-16'>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#blog">Blog</a>
+                <Link to="/about">About</Link>
+                <Link to="/contact">Contact</Link>
+                <Link to="/blog">Blog</Link>
             </li>
         </ul>
         <div className="bg-[#F9F9F9] w-full h-[45px] flex items-center justify-center">
